@@ -6,4 +6,4 @@ before_install:
   - docker build -t aluhamaa/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true aluhamaa/docker-react npt run test
+  - docker run -e CI=true aluhamaa/docker-react npm run test
